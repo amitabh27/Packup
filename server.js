@@ -640,7 +640,7 @@ app.get('/f/cheapest/:source/:destination/:date',function(req,res){
 								}
 							
     console.log(s+"    "+d);							
-	request('http://developer.goibibo.com/api/search/?app_id=24047e2c&app_key=6ec16de23b3fe49715476134a1b5e372&source='+s+'&destination='+d+'&dateofdeparture='+date+'&seatingclass=E&adults=1&children=0&infants=0&counter=100', function (error, response, body) {
+	request('http://developer.goibibo.com/api/search/?app_id=<APP_ID>&app_key=<APP_KEY>&source='+s+'&destination='+d+'&dateofdeparture='+date+'&seatingclass=E&adults=1&children=0&infants=0&counter=100', function (error, response, body) {
     if (!error && response.statusCode == 200) 
 	{
 	console.log(body);
@@ -730,7 +730,7 @@ app.get('/f/specific/:source/:destination/:date/:airline/:class',function(req,re
 	if(classs=='business' || classs=='Business')
 		classs='B';
 	
-	request('http://developer.goibibo.com/api/search/?app_id=24047e2c&app_key=6ec16de23b3fe49715476134a1b5e372&source='+s+'&destination='+d+'&dateofdeparture='+date+'&seatingclass='+classs+'&adults=1&children=0&infants=0&counter=100', function (error, response, body) {
+	request('http://developer.goibibo.com/api/search/?app_id=<APP_ID>&app_key=<APP_KEY>&source='+s+'&destination='+d+'&dateofdeparture='+date+'&seatingclass='+classs+'&adults=1&children=0&infants=0&counter=100', function (error, response, body) {
     if (!error && response.statusCode == 200) 
 	{
 	//console.log(body);
@@ -873,7 +873,7 @@ app.get('/b/list/:source/:destination/:date',function(req,res){
 	
 	function first(callback)
 	{
-	request('http://developer.goibibo.com/api/bus/search/?app_id=24047e2c&app_key=6ec16de23b3fe49715476134a1b5e372&format=json&source='+source+'&destination='+destination+'&dateofdeparture='+date, function (error, response, body) {
+	request('http://developer.goibibo.com/api/bus/search/?app_id=<APP_ID>&app_key=<APP_KEY>&format=json&source='+source+'&destination='+destination+'&dateofdeparture='+date, function (error, response, body) {
 	if (!error && response.statusCode == 200) 
 	{
 	var o=JSON.parse(body);
