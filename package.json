@@ -1,0 +1,26 @@
+{
+  "name": "packup-travelbot",
+  "version": "1.0.0",
+  "description": "A Restful API app for chatbot",
+  "main": "server.js",
+  "dependencies": {
+    "express":"*",
+	"body-parser":"*",
+	"request":"*",
+	"jquery":"*"
+  },
+  "devDependencies": {},
+  "scripts": {
+  "start": "node server.js"
+},
+"repository":{
+"type":"git",
+"url":"https://github.com/amitabh27/packup"
+},
+  "engines": {
+    "node": "6.11.4",
+	"npm":"3.10.10"
+  },
+  "author": "amitabh tiwari",
+  "license": "ISC"
+}
