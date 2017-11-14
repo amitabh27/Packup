@@ -1,6 +1,6 @@
 {
   "name": "packup-travelbot",
-  "version": "1.0.0",
+  "version": "1.0.0", 
   "description": "A Restful API app for chatbot",
   "main": "server.js",
   "dependencies": {
